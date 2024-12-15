@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
     if (search) {
       data = await checkWheather(search);
     } else {
-      data = await checkWheather("una");
+      data = await checkWheather("Chandigarh");
     }
 
     if (!data) {
